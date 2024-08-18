@@ -1,36 +1,18 @@
 <?php $this->load->view('templates/header'); ?>
 <div class="table-container">
-	<table class="table">
-		<thead>
-		<tr>
-			<th>ID</th>
-			<th>Nama Lokasi</th>
-			<th>Negara</th>
-			<th>Provinsi</th>
-			<th>Kota</th>
-			<th>Created At</th>
-			<th>Updated At</th>
-			<th>Actions</th>
-		</tr>
-		</thead>
-		<tbody>
+	<div class="list-container">
 		<?php foreach ($lokasiList as $item): ?>
-			<tr>
-				<td><?php echo htmlspecialchars($item['id']); ?></td>
-				<td><?php echo htmlspecialchars($item['namaLokasi']); ?></td>
-				<td><?php echo htmlspecialchars($item['negara']); ?></td>
-				<td><?php echo htmlspecialchars($item['provinsi']); ?></td>
-				<td><?php echo htmlspecialchars($item['kota']); ?></td>
-				<td><?php echo htmlspecialchars($item['createdAt']); ?></td>
-				<td><?php echo htmlspecialchars($item['updatedAt']); ?></td>
+			<div class="list-data">
+				<span><strong>Nama Lokasi:</strong> <?php echo htmlspecialchars($item['namaLokasi']); ?></span>
+				<span><strong>Kota:</strong> <?php echo htmlspecialchars($item['kota']); ?></span>
+				<span><strong>Provinsi:</strong> <?php echo htmlspecialchars($item['provinsi']); ?></span>
 
-				<td>
-					<a href="<?php echo site_url('proyek/edit/'.$item['id']); ?>">Edit</a>
-					<a href="<?php echo site_url('proyek/delete/'.$item['id']); ?>" onclick="return confirm('Are you sure?')">Delete</a>
-				</td>
-			</tr>
+				<div class="actions">
+					<a href="<?php echo site_url('lokasi/edit/'.$item['id']); ?>">Edit</a>
+					<a href="<?php echo site_url('lokasi/delete/'.$item['id']); ?>" onclick="return confirm('Are you sure?')">Delete</a>
+				</div>
+			</div>
 		<?php endforeach; ?>
-		</tbody>
-	</table>
+	</div>
 </div>
 <?php $this->load->view('templates/footer'); ?>

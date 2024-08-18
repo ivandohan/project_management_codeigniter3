@@ -10,8 +10,10 @@
 <header>
 	<h1>Project Management</h1>
 	<nav class="navbar">
-		<a href="<?php echo site_url('proyek'); ?>">Proyek</a>
-		<a href="<?php echo site_url('lokasi'); ?>">Lokasi</a>
+		<a href="<?php echo site_url('proyek'); ?>">List Proyek</a>
+		<a href="<?php echo site_url('lokasi'); ?>">List Lokasi</a>
+		<a href="<?php echo site_url('proyek/create'); ?>">Tambah Proyek</a>
+		<a href="<?php echo site_url('lokasi/create'); ?>">Tambah Lokasi</a>
 	</nav>
 </header>
 <div class="container">

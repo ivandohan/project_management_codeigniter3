@@ -55,10 +55,17 @@ $route['default_controller'] = 'proyek/ProyekController';
 $route['proyek'] = 'proyek/ProyekController/index';
 $route['proyek/(:num)'] = 'proyek/ProyekController/show/$1';
 $route['proyek/create'] = 'proyek/ProyekController/create';
+$route['proyek/store'] = 'proyek/ProyekController/store';
 $route['proyek/edit/(:num)'] = 'proyek/ProyekController/edit/$1';
 $route['proyek/delete/(:num)'] = 'proyek/ProyekController/delete/$1';
+$route['proyek/detail/(:num)'] = 'proyek/ProyekController/detail/$1';
 
 $route['lokasi'] = 'lokasi/LokasiController/index';
+$route['lokasi/create'] = 'lokasi/LokasiController/create';
+$route['lokasi/store'] = 'lokasi/LokasiController/store';
+$route['lokasi/edit/(:num)'] = 'lokasi/LokasiController/edit/$1';
+$route['lokasi/update/(:num)'] = 'lokasi/LokasiController/update/$1';
+$route['lokasi/delete/(:num)'] = 'lokasi/LokasiController/delete/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
