@@ -11,7 +11,7 @@
 	<h1>Project Management</h1>
 	<nav class="navbar">
 		<a href="<?php echo site_url('proyek'); ?>">Proyek</a>
-		<a href="<?php echo site_url('proyek/create'); ?>">Add Proyek</a>
+		<a href="<?php echo site_url('lokasi'); ?>">Lokasi</a>
 	</nav>
 </header>
 <div class="container">
